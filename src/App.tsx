@@ -41,13 +41,6 @@ const App: Component = () => {
           </a>
         </div>
       </Show>
-      <div>
-          <a href={`${BACKEND_URL}/${shortUrl()}`} target="_BLANK">
-            {`${BACKEND_URL}/${shortUrl()}`}
-            {`${BACKEND_URL}/${shortUrl()}`}
-          </a>
-        </div>
-
     </div>
   );
 };
