@@ -1,6 +1,6 @@
 import { Component, createSignal, Show } from "solid-js";
 
-import styles from "./App.module.css";
+import "./app.css"
 
 import { BACKEND_URL } from "./lib/constants";
 
@@ -26,7 +26,7 @@ const App: Component = () => {
     getShortUrl();
   };
   return (
-    <div class={styles.App}>
+    <div class="wrapper">
       <div>
         <input
           type="text"
