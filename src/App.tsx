@@ -27,13 +27,12 @@ const App: Component = () => {
   };
   return (
     <div class="wrapper">
-      <div>
         <input
           type="text"
+          id="main-input"
           onChange={(event) => setLink(event.currentTarget.value)}
         />
-        <button onClick={handleSubmit}>Submit</button>
-      </div>
+        <button id="submit-btn" onClick={handleSubmit}>Submit</button>
       <Show when={shortUrl()}>
         <div>
           <a href={`${BACKEND_URL}?r=${shortUrl()}`} target="_BLANK">
