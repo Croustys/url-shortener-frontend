@@ -1,1 +1,1 @@
-export const BACKEND_URL = "https://shorturl-d4rjo.ondigitalocean.app";
+export const BACKEND_URL = "https://edge-go-shorturl.vercel.app/api";

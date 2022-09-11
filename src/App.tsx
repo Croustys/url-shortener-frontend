@@ -12,7 +12,7 @@ const App: Component = () => {
     const data = {
       url: link(),
     };
-    const resp = await fetch(`${BACKEND_URL}/api/shorten`, {
+    const resp = await fetch(`${BACKEND_URL}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,8 +36,8 @@ const App: Component = () => {
       </div>
       <Show when={shortUrl()}>
         <div>
-          <a href={`${BACKEND_URL}/${shortUrl()}`} target="_BLANK">
-            {`${BACKEND_URL}/${shortUrl()}`}
+          <a href={`${BACKEND_URL}?r=${shortUrl()}`} target="_BLANK">
+            {`${BACKEND_URL}?r=${shortUrl()}`}
           </a>
         </div>
       </Show>
