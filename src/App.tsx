@@ -1,6 +1,6 @@
 import { Component, createSignal, Show } from "solid-js";
 
-import "./app.css"
+import "./app.css";
 
 import { BACKEND_URL } from "./lib/constants";
 
@@ -27,12 +27,14 @@ const App: Component = () => {
   };
   return (
     <div class="wrapper">
-        <input
-          type="text"
-          id="main-input"
-          onChange={(event) => setLink(event.currentTarget.value)}
-        />
-        <button id="submit-btn" onClick={handleSubmit}>Submit</button>
+      <input
+        type="text"
+        id="main-input"
+        onChange={(event) => setLink(event.currentTarget.value)}
+      />
+      <button id="submit-btn" onClick={handleSubmit}>
+        Submit
+      </button>
       <Show when={shortUrl()}>
         <div>
           <a href={`${BACKEND_URL}?r=${shortUrl()}`} target="_BLANK">
